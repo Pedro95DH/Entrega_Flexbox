@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --primary-color: #814bc6;
+  --secondary-color: #000000;
+  --terciary-color: #f3960b;
+  --fourth-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-color);
+  width: 100vw;
+  height:100vh;
+}
+
+header {
+  background-color: var(--fourth-color);
+  position: fixed;
+  top:0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 5px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav ul li {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 20%;
+}
+
+.enlaces {
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#logo {
+  position: relative;
+  right: 15px;
+  height: 80%;
+}
+
+#logoMini {
+    padding: 5px;
+    margin: 5px;
+    height:80%;
+  }
+
+.enlaces:hover {
+  color: #814bc6;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+}
+
+.icons {
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+  filter: invert(100%);
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#panelUsuario {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 300px;
+}
+
+@media screen and (max-width: 800px) {
+  .icons:hover {
+    background-color: #814bc6;
+    filter: invert(0%);
+    border-radius: 12px;
+  }
+
+  .nombresEnlaces {
+    display: none;
+  }
+
+  #panelUsuario {
+    width: 30%;
+  }
+}
+
+main{
+  width:80%;
+  display: flex;
+  flex-direction: column;
+}
+#hero{
+  border: 2px solid red;
+    background-color: #000000;
+    width:80%;
+    height: 80vh;
+    margin:auto;
+    margin-top:80px;
+}
+
+#productos{
+  border: 2px solid green;
+  background-color: #000000;
+  width:80%;
+  height: 50vh;
+  margin:auto;
+}
+
+#opiniones{
+  border: 2px solid violet;
+  background-color: #000000;
+  width:80%;
+  height: 50vh;
+  margin:auto;
+}
+
+footer {
+  background-color: var(--fourth-color);
+  position: fixed;
+  bottom:0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 5px;
+}
+
+
