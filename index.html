@@ -7,16 +7,21 @@
     <meta name="description" content="Proyecto de Flexbox" />
     <meta name="keywords" content="Libros, lectura, Librería, Lector, Leer" />
     <link rel="icon" href="./assetsfolder/favicon.ico" />
-    <title>Folder - Tu Papelería Preferida</title>
+    <title>Folder - Líder en papelería</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav>
         <picture id="logo">
-            <source id="logoMini" media="(max-width:500px)" srcset="./assetsFolder/logoMini.jpg" alt="Logo">
-            <img src="./assetsFolder/logo.svg" alt="Logo">
-          </picture>
+          <source
+            id="logoMini"
+            media="(max-width:500px)"
+            srcset="./assetsFolder/logoMini.jpg"
+            alt="Logo"
+          />
+          <img src="./assetsFolder/logo.svg" alt="Logo" />
+        </picture>
         <ul id="menu">
           <li>
             <a class="enlaces" href="#"
@@ -25,7 +30,7 @@
                 src="./assetsFolder/catalogo.png"
                 alt="Cátalogo"
               />
-              <p class="nombresEnlaces">Cátalogo</p></a
+              <span class="nombresEnlaces">Cátalogo</span></a
             >
           </li>
           <li>
@@ -35,7 +40,7 @@
                 src="./assetsFolder/novedades.png"
                 alt="Novedades"
               />
-              <p class="nombresEnlaces">Novedades</p></a
+              <span class="nombresEnlaces">Novedades</span></a
             >
           </li>
           <li>
@@ -45,7 +50,7 @@
                 src="./assetsFolder/localizacion.png"
                 alt="Tiendas"
               />
-              <p class="nombresEnlaces">Tiendas</p></a
+              <span class="nombresEnlaces">Tiendas</span></a
             >
           </li>
           <li>
@@ -55,7 +60,7 @@
                 src="./assetsFolder/contacto.png"
                 alt="Contacto"
               />
-              <p class="nombresEnlaces">Contacto</p></a
+              <span class="nombresEnlaces">Contacto</span></a
             >
           </li>
         </ul>
@@ -67,7 +72,7 @@
                 src="./assetsFolder/usuario.png"
                 alt="Inicio de Sesión"
               />
-              <p class="nombresEnlaces">Inicia sesión</p></a
+              <span class="nombresEnlaces">Inicia sesión</span></a
             >
           </li>
           <li>
@@ -77,39 +82,55 @@
                 src="./assetsFolder/carrito.png"
                 alt="Carrito"
               />
-              <p class="nombresEnlaces">Tu carrito</p></a
+              <span class="nombresEnlaces">Tu carrito</span></a
             >
           </li>
         </ul>
       </nav>
     </header>
     <main>
-        <section id="hero">
-
-        </section>
-        <section id="productos">
+      <section id="hero">
+        <div>
+        <p>Listos para la....</p>
+        <img id="imagenVuelta" src="./assetsFolder/vueltacole.png" alt="vuelta al cole">
+      </div>
+        <img id="imagenNinos" src="./assetsFolder/ninos.png" alt="niños vuelta al cole">
+      </section>
+      <section id="productos">
         <div class="articulos">
-          <img src="./assetsFolder/estuche.jpeg" alt="estuche">
-          <p></p>
-          <div class="botones"><button class="botonInfo">+ Info</button><button class="Anadir">Añadir</button></div>
+          <img src="./assetsFolder/estuche.jpeg" alt="estuche" />
+          <p>Estuche Rosa 3,60€</p>
+          <div class="botones">
+            <button class="botonInfo">+ Info</button
+            ><button class="Anadir">Añadir</button>
+          </div>
         </div>
         <div class="articulos">
-          <img src="./assetsFolder/papelera.jpeg" alt="papelera">
-          <p></p>
-          <div class="botones"><button class="botonInfo">+ Info</button><button class="Anadir">Añadir</button></div>
+          <img src="./assetsFolder/papelera.jpeg" alt="papelera" />
+          <p>Papelera verde 7,00€</p>
+          <div class="botones">
+            <button class="botonInfo">+ Info</button
+            ><button class="Anadir">Añadir</button>
+          </div>
         </div>
         <div class="articulos">
-          <img src="./assetsFolder/libretas.jpeg" alt="pack de libretas">
-          <p></p>
-          <div class="botones"><button class="botonInfo">+ Info</button><button class="Anadir">Añadir</button></div>
+          <img src="./assetsFolder/libretas.jpeg" alt="pack de libretas" />
+          <p> Pack 6 Libretas 15,00€</p>
+          <div class="botones">
+            <button class="botonInfo">+ Info</button
+            ><button class="Anadir">Añadir</button>
+          </div>
         </div>
         <div class="articulos">
-          <img src="./assetsFolder/tipex.jpeg" alt="tipex">
-          <p></p>
-          <div class="botones"><button class="botonInfo">+ Info</button><button class="Anadir">Añadir</button></div>
+          <img src="./assetsFolder/tipex.jpeg" alt="tipex" />
+          <p> Tipex Cinta Pritt 2,00€</p>
+          <div class="botones">
+            <button class="botonInfo">+ Info</button
+            ><button class="Anadir">Añadir</button>
+          </div>
         </div>
-        </section>
-        <section id="opiniones"></section>
+      </section>
+      <section id="opiniones"></section>
     </main>
     <footer></footer>
   </body>

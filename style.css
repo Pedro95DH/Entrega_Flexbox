@@ -17,16 +17,20 @@
 body {
   background-color: var(--primary-color);
   width: 100vw;
-  height:100vh;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
   background-color: var(--fourth-color);
   position: fixed;
-  top:0%;
+  top: 0%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 80px;
@@ -61,7 +65,6 @@ nav ul li {
 
 .enlaces {
   color: #000000;
-  text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -76,10 +79,10 @@ nav ul li {
 }
 
 #logoMini {
-    padding: 5px;
-    margin: 5px;
-    height:80%;
-  }
+  padding: 5px;
+  margin: 5px;
+  height: 80%;
+}
 
 .enlaces:hover {
   color: #814bc6;
@@ -125,40 +128,139 @@ nav ul li {
   }
 }
 
-main{
-  width:80%;
+main {
+  width: 90%;
   display: flex;
   flex-direction: column;
-}
-#hero{
-  border: 2px solid red;
-    background-color: #000000;
-    width:80%;
-    height: 80vh;
-    margin:auto;
-    margin-top:80px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
-#productos{
-  border: 2px solid green;
-  background-color: #000000;
-  width:80%;
-  height: 50vh;
-  margin:auto;
+#hero {
+  background-color: orange;
+  width: 100%;
+  height: 700px;
+  min-height: 500px;
+  margin: auto;
+  margin-top: 80px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-#opiniones{
+#hero > div {
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  max-width: 650px;
+  min-width: 300px;
+}
+
+#hero > div > img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 650px;
+  min-width: 300px;
+}
+
+#hero > img {
+  width: 50%;
+  max-width: 650px;
+  min-width: 300px;
+}
+
+#productos {
+  background-color: var(--fourth-color);
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.articulos {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  flex-basis: 250px;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.articulos > img {
+  width: 100%;
+  padding: 15px;
+}
+
+
+.articulos > img:hover{
+    transform: scale(1.1);
+  }
+
+.botones{
+  width: 100%;
+  height: 30%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button{
+  border: 0px;
+  border-radius: 15px;
+  padding: 4px 8px;
+  color: var(--fourth-color);
+  background-color: #814bc6;
+
+}
+
+.botonInfo{
+
+}
+
+.Anadir{
+
+}
+
+#opiniones {
   border: 2px solid violet;
   background-color: #000000;
-  width:80%;
-  height: 50vh;
-  margin:auto;
+  width: 100%;
+  height: 500px;
+  margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    width: 100%;
+  }
 }
 
 footer {
   background-color: var(--fourth-color);
-  position: fixed;
-  bottom:0%;
+  bottom: 0%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -167,5 +269,3 @@ footer {
   height: 80px;
   padding: 5px;
 }
-
-
