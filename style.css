@@ -397,6 +397,10 @@ footer a:hover {
   filter: invert(100%);
 }
 
+hr{
+  width: 100%;
+}
+
 /* ADAPTAR TODO EL MAIN AL FORMATO MOVIL */
 
 @media screen and (max-width: 800px) {
