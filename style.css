@@ -22,6 +22,8 @@ a {
   text-decoration: none;
 }
 
+/* CREACION DEL MENU SUPERIOR */
+
 header {
   background-color: var(--fourth-color);
   position: fixed;
@@ -111,6 +113,8 @@ nav ul li {
   width: 300px;
 }
 
+/* CAMBIOS AL HEADER PARA LA VERSION MOVIL */
+
 @media screen and (max-width: 800px) {
   .icons:hover {
     background-color: #814bc6;
@@ -135,6 +139,8 @@ main {
   align-items: center;
   margin: auto;
 }
+
+/* HERO */
 
 #hero {
   background-color: orange;
@@ -166,6 +172,19 @@ main {
   gap: 20px;
 }
 
+/* ANIMACION PARA EL HERO */
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg) scale(1);
+  }
+}
+
 #hero > div > img {
   display: flex;
   flex-direction: column;
@@ -174,6 +193,7 @@ main {
   width: 100%;
   max-width: 650px;
   min-width: 300px;
+  animation: aparecer 1s linear;
 }
 
 #hero > img {
@@ -181,6 +201,8 @@ main {
   max-width: 650px;
   min-width: 400px;
 }
+
+/* PARTE DEL CATALOGO */
 
 #productos {
   background-color: var(--fourth-color);
@@ -263,6 +285,8 @@ button:hover {
   background-color: var(--secondary-color);
 }
 
+/* PARTE DE LA OPINION DE COMPRADORES*/
+
 #opiniones {
   background-color: var(--fourth-color);
   width: 100%;
@@ -313,6 +337,8 @@ button:hover {
   margin: 10px;
 }
 
+/* PIE DE LA PAGINA */
+
 footer {
   background-color: var(--secondary-color);
   color: var(--fourth-color);
@@ -326,6 +352,7 @@ footer {
   padding: 40px 20px 0px 20px;
   margin: auto;
   gap: 20px;
+  padding-bottom: 40px;
 }
 
 footer section {
@@ -335,7 +362,7 @@ footer section {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  gap:100px;
+  gap: 60px;
   margin-bottom: 15px;
 }
 
@@ -353,20 +380,21 @@ footer ul {
   gap: 10px;
 }
 
-footer a{
+footer a {
   color: var(--fourth-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.icons {
+.iconsFooter {
   height: 35px;
   width: 35px;
   padding: 5px;
   filter: invert(100%);
 }
 
+/* ADAPTAR TODO EL MAIN AL FORMATO MOVIL */
 
 @media screen and (max-width: 800px) {
   main {
