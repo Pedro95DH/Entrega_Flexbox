@@ -369,8 +369,6 @@ footer ul {
   list-style-type: none;
   flex-basis: 250px;
   flex-grow: 1;
-  max-width: 250px;
-  height: 1fr;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -391,9 +389,9 @@ footer a:hover {
 }
 
 .iconsFooter {
-  height: 35px;
-  width: 35px;
-  padding: 5px;
+  height: 25px;
+  width: 25px;
+  margin: 0 10px;
   filter: invert(100%);
 }
 
