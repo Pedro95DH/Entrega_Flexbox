@@ -89,7 +89,6 @@ nav ul li {
   color: #814bc6;
   text-decoration: none;
   width: 100%;
-  padding: 10px;
 }
 
 .icons {
@@ -251,7 +250,7 @@ main {
   margin: 5px;
 }
 
-.articulos > img:hover {
+.articulos img:hover {
   transform: scale(1.1);
 }
 
@@ -385,6 +384,10 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer a:hover {
+  color: var(--terciary-color);
 }
 
 .iconsFooter {
