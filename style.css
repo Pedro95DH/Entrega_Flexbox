@@ -409,7 +409,7 @@ hr{
   
   header {
   background-color: var(--fourth-color);
-  position: fixed;
+  position: absolute;
   bottom: 0%;
 }
 
