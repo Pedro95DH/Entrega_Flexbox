@@ -406,16 +406,5 @@ hr{
   main {
     width: 100%;
   }
-  
-  header {
-  background-color: var(--fourth-color);
-  position: absolute;
-  bottom: 0%;
-}
-
-#hero {
-  background-color: var(--terciary-color);
-  margin-top: 0px;
-}
 
 }
