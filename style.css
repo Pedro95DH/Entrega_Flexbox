@@ -410,7 +410,7 @@ hr{
   header {
   background-color: var(--fourth-color);
   position: fixed;
-  top: 100%;
+  bottom: 0%;
 }
 
 #hero {
